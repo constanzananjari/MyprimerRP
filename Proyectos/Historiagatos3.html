@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(162, 253, 238);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2></h2>
+
+
+<header>
+  <h2>Fluffy</h2>
+
+  <table>
+    <tr>
+      <th></th>
+      <th><img src="gato3HTML.jpg"width="400"></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td></td>
+      <td>fue encontrada llena de lodo y atropellada. Su estado de salud estaba gravísimo ya que no podía moverse y su rabito, estaba destrozado.
+ La hemos tratado con ayuda de cuidados veterinarios y mucho cariño entre todos los voluntarios del refugio, así que ya está recuperada esperando que un hogar la reciba con mucho amor y la trate con el mismo cariño que ella da.<p>
+      </p></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Gatos</a></li>
+      <li><a href="#"></a></li>
+    </ul>
+  </nav>
+  
+  
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+</html>
