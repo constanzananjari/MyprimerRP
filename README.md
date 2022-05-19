@@ -196,7 +196,7 @@ git fetch
 Borrar un archivo del repositorio
 git rm <archivo> 
   
-Forkç
+Fork
   
 Descargar remote de un fork
 git remote add upstream <url>
