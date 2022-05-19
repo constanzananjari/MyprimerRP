@@ -2,28 +2,28 @@
     <body>
         <div id='background'>
             <div id='character' style='position:absolute; top:100px; left:450px; background-image: url("img/down1.png"); width:59px; height:86px;'></div>
-        </div>
+        </div>  
         <script type="text/javascript">
-            var leftValue = 450, topValue = 100, direction = "down";
+                var leftValue = 450, topValue = 100, direction = 'down';
+
             function update(){
                 document.getElementById("character").style.left = leftValue+"px";
                 document.getElementById("character").style.top = topValue+"px";
-                document.getElementById("character").style.top = "url(`img/"+direction+"downl.png`)"
+                document.getElementById("character").style.backgroundImage = "url('img/"+direction+"l.png')";
             }
             document.onkeydown = function(e) {
-                console.log('e: ', e); 
-                console.log('e.keyCode: ', e.keyCode);
+                console.log(e);    
                 if (e.keyCode == 37 && leftValue > 0) { // LEFT
                     leftValue = leftValue - 10;
-                    direction = "left"; 
+                    direction = 'left'; 
                 }
                 else if (e.keyCode == 39 && leftValue < 500) { // RIGHT
                     leftValue = leftValue + 10;    
-                    direction = "right"     
+                    direction = 'right';     
                 }
                 else if (e.keyCode == 40 && topValue > 0 ) { // DOWN
                     topValue = topValue + 10;
-                    	 direction ="down"
+                    direction ='down';
                 }
 				else if (e.keyCode == 38 && topValue <500 ) { // UP
                     topValue = topValue - 10;
