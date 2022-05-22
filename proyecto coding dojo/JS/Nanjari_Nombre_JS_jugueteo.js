@@ -1,18 +1,18 @@
-var alturaniño("1.60");
-
-function ElNiñoPuedeSubirALaMontañaRusa(x){
+var alturaniño = "1,60 centimetros";
 
 
-//x =altura(1.60)
-if(x < 1.60);
-{
-console.log("Sí");
-}
-  else{
-      console.log("No");
-  }
-  
-  
+function ElNiñoPuedeSubirALaMontañaRusa(x) {
+
+
+    //x = altura(1.60);
+    if (x > 1.60)
+    {
+            console.log('si');
+    }
+    else{
+        console.log('no');
+    }
+
+
     
-
 }
